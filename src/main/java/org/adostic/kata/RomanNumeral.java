@@ -30,7 +30,7 @@ public class RomanNumeral {
 	}
 
 	@SuppressWarnings("AssignmentToMethodParameter")
-	public String convert(int arabic) {
+	public String toRoman(int arabic) {
 		String result = "";
 		if (arabic < 0) {
 			result += "-";

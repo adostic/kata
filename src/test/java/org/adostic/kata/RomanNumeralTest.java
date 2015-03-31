@@ -17,40 +17,40 @@ public class RomanNumeralTest {
 	public void test() {
 		RomanNumeral romanNumeral = new RomanNumeral();
 
-		Assert.assertEquals("I",romanNumeral.convert(1));
-		Assert.assertEquals("II",romanNumeral.convert(2));
-		Assert.assertEquals("III",romanNumeral.convert(3));
+		Assert.assertEquals("I",romanNumeral.toRoman(1));
+		Assert.assertEquals("II",romanNumeral.toRoman(2));
+		Assert.assertEquals("III",romanNumeral.toRoman(3));
 
-		Assert.assertEquals("IV",romanNumeral.convert(4));
+		Assert.assertEquals("IV",romanNumeral.toRoman(4));
 
-		Assert.assertEquals("V",romanNumeral.convert(5));
-		Assert.assertEquals("VI",romanNumeral.convert(6));
-		Assert.assertEquals("VII",romanNumeral.convert(7));
-		Assert.assertEquals("VIII",romanNumeral.convert(8));
+		Assert.assertEquals("V",romanNumeral.toRoman(5));
+		Assert.assertEquals("VI",romanNumeral.toRoman(6));
+		Assert.assertEquals("VII",romanNumeral.toRoman(7));
+		Assert.assertEquals("VIII",romanNumeral.toRoman(8));
 
-		Assert.assertEquals("IX",romanNumeral.convert(9));
+		Assert.assertEquals("IX",romanNumeral.toRoman(9));
 
-		Assert.assertEquals("X",romanNumeral.convert(10));
-		Assert.assertEquals("XX",romanNumeral.convert(20));
-		Assert.assertEquals("XXX",romanNumeral.convert(30));
-		Assert.assertEquals("XL",romanNumeral.convert(40));
+		Assert.assertEquals("X",romanNumeral.toRoman(10));
+		Assert.assertEquals("XX",romanNumeral.toRoman(20));
+		Assert.assertEquals("XXX",romanNumeral.toRoman(30));
+		Assert.assertEquals("XL",romanNumeral.toRoman(40));
 
-		Assert.assertEquals("L",romanNumeral.convert(50));
+		Assert.assertEquals("L",romanNumeral.toRoman(50));
 
-		Assert.assertEquals("XC",romanNumeral.convert(90));
-		Assert.assertEquals("C",romanNumeral.convert(100));
-		Assert.assertEquals("CC",romanNumeral.convert(200));
+		Assert.assertEquals("XC",romanNumeral.toRoman(90));
+		Assert.assertEquals("C",romanNumeral.toRoman(100));
+		Assert.assertEquals("CC",romanNumeral.toRoman(200));
 
-		Assert.assertEquals("CD",romanNumeral.convert(400));
-		Assert.assertEquals("D",romanNumeral.convert(500));
-		Assert.assertEquals("CM",romanNumeral.convert(900));
-		Assert.assertEquals("M",romanNumeral.convert(1000));
+		Assert.assertEquals("CD",romanNumeral.toRoman(400));
+		Assert.assertEquals("D",romanNumeral.toRoman(500));
+		Assert.assertEquals("CM",romanNumeral.toRoman(900));
+		Assert.assertEquals("M",romanNumeral.toRoman(1000));
 
 
-		Assert.assertEquals("MCMXCIX",romanNumeral.convert(1999));
-		Assert.assertEquals("-MCMXCIX",romanNumeral.convert(-1999));
+		Assert.assertEquals("MCMXCIX",romanNumeral.toRoman(1999));
+		Assert.assertEquals("-MCMXCIX",romanNumeral.toRoman(-1999));
 
-		Assert.assertEquals("-I",romanNumeral.convert(-1));
+		Assert.assertEquals("-I",romanNumeral.toRoman(-1));
 
 
 
